@@ -30,7 +30,7 @@ jobs:
       - name: Clone OpenWrt snapshot
         run: |
           git clone --depth=1 --branch main \
-            https://github.com/openwrt/openwrt.git openwrt
+            https://github.com/openwrt/openwrt/tree/openwrt-25.12.git openwrt
 
       - name: Apply antenna kernel patch
         working-directory: openwrt
